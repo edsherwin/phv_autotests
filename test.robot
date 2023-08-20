@@ -6,6 +6,7 @@ Library    OperatingSystem
 *** Variables ***
 ${BROWSER}    chrome
 ${URL}    https://google.com
+${chrome_options}    add_argument(“–headless”); add_argument(“no-sandbox”)
 
 
 *** Test Cases ***
@@ -22,8 +23,9 @@ Test 001 - Template
 *** Keywords ***
 Setup
     [Arguments]    ${URL}
-    Start Virtual Display    1920    1080
-    Open Browser    ${URL}    Chrome
+    # Start Virtual Display    1920    1080
+    # Open Browser    ${URL}    Chrome
+    Open Browser    ${URL}    chrome_options=${chrome_options}
     # Run Keyword If    '''${BROWSER}'''=='''chrome'''    Open Chrome In Headless    ${URL}
     # Run Keyword If    '''${BROWSER}'''=='''chrome'''    Start Virtual Display    1920    1080
     # Run Keyword If    '''${BROWSER}'''=='''chrome'''    Open Browser    ${URL}    ${BROWSER}
