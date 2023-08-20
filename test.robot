@@ -1,5 +1,5 @@
 *** Settings ***
-Library    Selenium2Library
+Library    SeleniumLibrary
 Library    XvfbRobot
 Library    OperatingSystem
 
@@ -21,8 +21,8 @@ Test 001 - Template
 *** Keywords ***
 Setup
     [Arguments]    ${URL}
-    Start Virtual Display    1920    1080
-    # Open Browser    ${URL}    Chrome
+    # Start Virtual Display    1920    1080
+    Open Browser    ${URL}    Chrome
     Run Keyword If    '''${BROWSER}'''=='''chrome'''    Open Chrome In Headless    ${URL}
     Run Keyword If    '''${BROWSER}'''=='''chrome'''    Start Virtual Display    1920    1080
     Run Keyword If    '''${BROWSER}'''=='''chrome'''    Open Browser    ${URL}    ${BROWSER}
@@ -39,5 +39,5 @@ Open Chrome In Headless
     Call Method    ${chrome options}    add_argument    no-sandbox
     Call Method    ${chrome options}    add_argument    disable-extensions
     Call Method    ${chrome options}    add_argument    disable-dev-shm-usage
-    Create Webdriver    chroeme    chrome_options=${chrome options}
+    Create Webdriver    Chrome    chrome_options=${chrome options}
     Go To    ${URL}
