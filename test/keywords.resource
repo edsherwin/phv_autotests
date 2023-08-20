@@ -1,26 +1,12 @@
 *** Settings ***
+Resource    variables.resource
 Library    SeleniumLibrary
+Library    String
 Library    XvfbRobot
-Library    OperatingSystem
-
-*** Variables ***
-${BROWSER}    chrome
-${URL}    https://google.com
-${chrome_options}    add_argument(“–headless”); add_argument(“no-sandbox”)
-${driver_path}    /usr/bin/chromedriver
-
-*** Test Cases ***
-Test 001 - Template
-    [Documentation]    Test Case Template
-    [Setup]    Setup    ${URL}
-    Maximize Browser Window
-    Sleep    10s
-    Capture Page Screenshot
-    [Teardown]    Teardown
 
 
 *** Keywords ***
-Setup
+Open Browser To Execute Tests
     [Arguments]    ${URL}
     # Start Virtual Display    1920    1080
     # Open Browser    ${URL}    Chrome
