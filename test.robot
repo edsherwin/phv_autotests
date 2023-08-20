@@ -4,7 +4,7 @@ Library    XvfbRobot
 Library    OperatingSystem
 
 *** Variables ***
-${BROWSER}    Chrome
+${BROWSER}    chrome
 ${URL}    https://google.com
 
 
@@ -14,6 +14,7 @@ Test 001 - Template
     [Setup]    Setup    ${URL}
     Maximize Browser Window
     Sleep    10s
+    Capture Page Screenshot
     [Teardown]    Teardown
 
 
@@ -21,12 +22,12 @@ Test 001 - Template
 *** Keywords ***
 Setup
     [Arguments]    ${URL}
-    # Start Virtual Display    1920    1080
+    Start Virtual Display    1920    1080
     Open Browser    ${URL}    Chrome
-    Run Keyword If    '''${BROWSER}'''=='''chrome'''    Open Chrome In Headless    ${URL}
-    Run Keyword If    '''${BROWSER}'''=='''chrome'''    Start Virtual Display    1920    1080
-    Run Keyword If    '''${BROWSER}'''=='''chrome'''    Open Browser    ${URL}    ${BROWSER}
-    Run Keyword If    '''${BROWSER}'''=='''chrome'''    Open Browser    ${URL}    Chrome
+    # Run Keyword If    '''${BROWSER}'''=='''chrome'''    Open Chrome In Headless    ${URL}
+    # Run Keyword If    '''${BROWSER}'''=='''chrome'''    Start Virtual Display    1920    1080
+    # Run Keyword If    '''${BROWSER}'''=='''chrome'''    Open Browser    ${URL}    ${BROWSER}
+    # Run Keyword If    '''${BROWSER}'''=='''chrome'''    Open Browser    ${URL}    chrome
 
 Teardown
     Close Browser
