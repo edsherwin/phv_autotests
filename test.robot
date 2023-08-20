@@ -25,7 +25,7 @@ Setup
     [Arguments]    ${URL}
     # Start Virtual Display    1920    1080
     # Open Browser    ${URL}    Chrome
-    Open Browser    ${URL}    chrome_options=${chrome_options}
+    Open Browser    ${URL}    chrome    chrome_options=${chrome_options}
     # Run Keyword If    '''${BROWSER}'''=='''chrome'''    Open Chrome In Headless    ${URL}
     # Run Keyword If    '''${BROWSER}'''=='''chrome'''    Start Virtual Display    1920    1080
     # Run Keyword If    '''${BROWSER}'''=='''chrome'''    Open Browser    ${URL}    ${BROWSER}
