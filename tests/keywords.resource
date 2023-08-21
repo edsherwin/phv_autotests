@@ -12,7 +12,7 @@ Open Browser To Execute Tests
     # Open Browser    ${URL}    Chrome
     ### OPTION 1 ###
     Open Browser    ${URL}    Chrome    chrome_options=${chrome_options}
-    # Run Keyword If    '''${BROWSER}'''=='''chrome'''    Open Chrome In Headless    ${URL}
+    # Run Keyword If    '''${BROWSER}'''=='''chrome'''    Open Chrome Browser In Headless    ${URL}
     # Run Keyword If    '''${BROWSER}'''=='''chrome'''    Start Virtual Display    1920    1080
     # Run Keyword If    '''${BROWSER}'''=='''chrome'''    Open Browser    ${URL}    ${BROWSER}
     # Run Keyword If    '''${BROWSER}'''=='''chrome'''    Open Browser    ${URL}    chrome
@@ -20,7 +20,7 @@ Open Browser To Execute Tests
 Teardown
     Close Browser
 
-Open Chrome In Headless
+Open Chrome Browser In Headless
     [Arguments]    ${URL}
     ${chrome options} =    Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
     Call Method    ${chrome options}    add_argument    headless
