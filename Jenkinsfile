@@ -11,6 +11,7 @@ pipeline {
 
         stage('Execute Tests') {
             steps {
+                agent { label 'test-agent' } // Specify the agent named "test-agent"
                 // Execute Robot Framework tests
                 sh 'robot -x junit.xml --outputdir results --timestampoutputs tests && rebot --outputdir results --output output.xml --merge results/output-*.xml'
                 // Trigger the Robot Framework tests Jenkins job
