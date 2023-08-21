@@ -24,9 +24,9 @@ pipeline {
     post {
         always {
             // Publish test results using Robot Publisher
-            step([$class: 'RobotPublisher', disableArchiveOutput: false, logFileName: 'log.html', onlyCritical: true,
-                otherFiles: '*.png', outputFileName: 'output.xml', outputPath: '.', passThreshold: 90,
-                reportFileName: 'report.html', unstableThreshold: 100])
+            step([$class: 'RobotPublisher', disableArchiveOutput: false, logFileName: 'results/log.html', onlyCritical: true,
+                otherFiles: 'results/*.png', outputFileName: 'results/output.xml', outputPath: '.', passThreshold: 90,
+                reportFileName: 'results/report.html', unstableThreshold: 100])
         }
     }
 }
