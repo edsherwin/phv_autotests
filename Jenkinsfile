@@ -1,5 +1,6 @@
 pipeline {
-    agent any
+    // agent any
+    agent { label 'test-agent' } // Specify the agent named "test-agent"
 
     stages {
         stage('Checkout Code') {
