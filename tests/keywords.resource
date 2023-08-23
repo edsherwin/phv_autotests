@@ -30,3 +30,8 @@ Open Chrome Browser In Headless
     Call Method    ${chrome options}    add_argument    disable-dev-shm-usage
     Create Webdriver    Chrome    chrome_options=${chrome options}
     Go To    ${URL}
+
+Execute Tests in Selenoid Environment
+    [Documentation]   Run various tests in Selenoid environment
+    ${selenoid_caps}=   Create Dictionary   browserName=${BROWSER_NAME}   version=${BROWSER_VERSION}   platform=${PLATFORM}     enableVideo=${True}     enableVNC=${True}
+    Open Browser    remote_url=${SELENOID_URL}   desired_capabilities=${selenoid_caps}
