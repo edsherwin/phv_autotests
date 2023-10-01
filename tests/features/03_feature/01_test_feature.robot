@@ -1,7 +1,6 @@
 *** Settings ***
-Resource    ../variables.resource
-Resource    ../imports.resource
-
+Resource    ../../variables.resource
+Resource    ../../imports.resource
 Suite Setup    Execute Tests in Selenoid Environment
 Suite Teardown    Teardown
 
