@@ -1,0 +1,27 @@
+{"level":30,"time":"2023-09-03T10:11:13.362Z","pid":59600,"hostname":"super","msg":"Listening on 35563"}
+{"level":30,"time":"2023-09-03T10:11:13.381Z","pid":59600,"hostname":"super","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-09-03T10:11:13.382Z","pid":59600,"hostname":"super","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-09-03T10:11:13.384Z","pid":59600,"hostname":"super","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-09-03T10:11:13.384Z","pid":59600,"hostname":"super","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/super/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:9389:15)
+    at PlaywrightServer.getActiveBrowser (/home/super/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:9908:59)
+    at PlaywrightServer.setTimeout (/home/super/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:10154:57)
+    at handleUnary (/home/super/.local/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:833:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+=============================================================
+{"level":30,"time":"2023-09-03T10:11:13.401Z","pid":59600,"hostname":"super","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-09-03T10:11:13.401Z","pid":59600,"hostname":"super","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/super/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:9389:15)
+    at PlaywrightServer.getActiveBrowser (/home/super/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:9908:59)
+    at PlaywrightServer.setTimeout (/home/super/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:10154:57)
+    at handleUnary (/home/super/.local/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:833:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+=============================================================
+{"level":30,"time":"2023-09-03T10:11:13.404Z","pid":59600,"hostname":"super","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-09-03T10:11:13.404Z","pid":59600,"hostname":"super","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-09-03T10:11:13.420Z","pid":59600,"hostname":"super","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2023-09-03T10:11:13.421Z","pid":59600,"hostname":"super","msg":"End of node method closeAllBrowsers"}

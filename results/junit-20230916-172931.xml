@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="02 Test" tests="2" errors="0" failures="0" skipped="0" time="25.524" timestamp="2023-09-16T17:29:31.010000">
+<testcase classname="02 Test" name="Test Case 001 - Test Execution in Selenoid" time="11.436">
+</testcase>
+<testcase classname="02 Test" name="Test Case 002 - Test Execution in Selenoid" time="12.494">
+</testcase>
+</testsuite>

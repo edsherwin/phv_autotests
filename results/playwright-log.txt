@@ -1,0 +1,51 @@
+{"level":30,"time":"2023-09-16T15:04:12.597Z","pid":68836,"hostname":"super","msg":"Listening on 37863"}
+{"level":30,"time":"2023-09-16T15:04:12.656Z","pid":68836,"hostname":"super","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-09-16T15:04:12.656Z","pid":68836,"hostname":"super","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-09-16T15:04:12.660Z","pid":68836,"hostname":"super","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-09-16T15:04:12.660Z","pid":68836,"hostname":"super","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-09-16T15:04:12.663Z","pid":68836,"hostname":"super","msg":"Start of node method connectToBrowser"}
+{"level":30,"time":"2023-09-16T15:04:12.675Z","pid":68836,"hostname":"super","msg":"Error of node method  connectToBrowser"}
+================= Original suppressed error =================
+browserType.connect: Unexpected token 'Y', "You are us"... is not valid JSON
+=========================== logs ===========================
+<ws preparing> retrieving websocket url from http://localhost:4444/wd/hub
+============================================================
+    at _connectBrowser (/home/super/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:9308:49)
+    at connectToBrowser (/home/super/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:9728:33)
+    at PlaywrightServer.connectToBrowser (/home/super/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:9923:34)
+    at handleUnary (/home/super/.local/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:833:17) {
+  name: 'SyntaxError'
+}
+=============================================================
+{"level":30,"time":"2023-09-16T15:04:12.680Z","pid":68836,"hostname":"super","msg":"Start of node method takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (/home/super/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:8187:11)
+    at takeScreenshot (/home/super/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:8226:3)
+    at PlaywrightServer.takeScreenshot (/home/super/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:9923:34)
+    at handleUnary (/home/super/.local/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:833:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+=============================================================
+{"level":30,"time":"2023-09-16T15:04:12.681Z","pid":68836,"hostname":"super","msg":"Error of node method  takeScreenshot"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/super/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:9389:15)
+    at PlaywrightServer.getActiveBrowser (/home/super/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:9908:59)
+    at PlaywrightServer.setTimeout (/home/super/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:10154:57)
+    at handleUnary (/home/super/.local/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:833:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+=============================================================
+{"level":30,"time":"2023-09-16T15:04:12.693Z","pid":68836,"hostname":"super","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-09-16T15:04:12.694Z","pid":68836,"hostname":"super","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/super/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:9389:15)
+    at PlaywrightServer.getActiveBrowser (/home/super/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:9908:59)
+    at PlaywrightServer.setTimeout (/home/super/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:10154:57)
+    at handleUnary (/home/super/.local/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:833:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+=============================================================
+{"level":30,"time":"2023-09-16T15:04:12.700Z","pid":68836,"hostname":"super","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-09-16T15:04:12.700Z","pid":68836,"hostname":"super","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-09-16T15:04:12.737Z","pid":68836,"hostname":"super","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2023-09-16T15:04:12.737Z","pid":68836,"hostname":"super","msg":"End of node method closeAllBrowsers"}
